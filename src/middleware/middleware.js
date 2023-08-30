@@ -1,4 +1,3 @@
-const express = require("express");
 const middleware = (req, res, next) => {
   const authKey = req.header("Authorization");
 

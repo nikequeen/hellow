@@ -1,6 +1,5 @@
-const express = require("express");
 const helloController = (req, res) => {
-  res.send("Hello World!");
+  res.send("hiiii world!");
 };
 
 module.exports = helloController;
