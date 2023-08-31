@@ -1,9 +1,6 @@
 const express = require("express");
-const middleware = require("../middleware/middleware");
+const middlecontroller = require("../controller/middlecontroller");
 
 const router2 = express.Router();
-router2.use(middleware);
-router2.get("/protected", middleware, (req, res) => {
-  res.json({ message: "Hii world" });
-});
+router2.get("/protected", middlecontroller);
 module.exports = router2;
